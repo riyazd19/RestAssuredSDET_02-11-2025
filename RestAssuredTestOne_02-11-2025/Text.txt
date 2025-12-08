@@ -1,0 +1,9 @@
+Dependencies to be used
+rest-assured
+json-path
+json
+gson
+testng
+scribejava-apis
+json-schema-validator
+xml-schema-validator
