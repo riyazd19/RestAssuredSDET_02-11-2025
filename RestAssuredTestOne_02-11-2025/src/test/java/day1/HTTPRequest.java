@@ -42,6 +42,7 @@ public class HTTPRequest {
                 .when()
                 .post("https://reqres.in/api/users")
                 .jsonPath().getInt("id");
+        System.out.println(id);
     }
 
     @Test(priority = 3,dependsOnMethods = {"create_User"})
@@ -57,7 +58,11 @@ public class HTTPRequest {
                 .body(data)
                 .when()
                 .put("https://reqres.in/api/users/" + id)
-                .then().statusCode(200).log().all();
+                .then().statusCode(200);
+    }
+    @Test(priority = 4)
+    void delete_User(){
+        given().header("x-api-key", apiKey).when().delete("https://reqres.in/api/users/" + id).then().statusCode(204);
 
     }
 }

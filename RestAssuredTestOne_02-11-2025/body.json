@@ -1,0 +1,15 @@
+{
+  "firstName": "Arjun Updated second",
+  "lastName": "Chopra Updated second",
+  "fullName": "Arjun Chopra Updated second",
+  "gender": "Female",
+  "dateOfBirth": "2005-03-05",
+  "age": 20,
+  "email": "arjun.chopra1@example.com",
+  "phone": "9727384839",
+  "address": {
+    "city": "Delhi",
+    "state": "India",
+    "zipCode": 234987
+  }
+}
